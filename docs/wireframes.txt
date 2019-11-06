@@ -1,0 +1,25 @@
+Wireframes 
+
+home - https://wireframe.cc/hSbfnu
+
+create an account - https://wireframe.cc/8IjaRe
+
+sign in - https://wireframe.cc/gh9yJu
+
+create a character - https://wireframe.cc/pJrE6M
+
+set character name - https://wireframe.cc/zMylH4
+
+set character race - https://wireframe.cc/AnQwJI
+
+set character class - https://wireframe.cc/UufyKu
+
+set character attributes - https://wireframe.cc/NcuRGz
+
+set character descriptions - https://wireframe.cc/vFdUVU
+
+set equipment - https://wireframe.cc/qX5AqL
+
+edit saved character - https://wireframe.cc/0yuo25
+
+view character - https://wireframe.cc/EDlzc1
