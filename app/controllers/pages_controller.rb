@@ -29,4 +29,9 @@ class PagesController < ApplicationController
       format.html { render:home }
     end
   end
+  def select_character
+    respond_to do |format|
+      format.html {render:select_character}
+    end
+  end
 end
