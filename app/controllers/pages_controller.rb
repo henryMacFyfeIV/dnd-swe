@@ -1,9 +1,11 @@
 class PagesController < ApplicationController
+  before_action :authenticate_user!, except: [:home]
   def home
     respond_to do |format|
       format.html { render:home }
     end
   end
+
   def create_an_account
     respond_to do |format|
       format.html { render:create_an_account }
