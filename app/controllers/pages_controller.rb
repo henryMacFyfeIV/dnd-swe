@@ -30,8 +30,10 @@ class PagesController < ApplicationController
     end
   end
   def select_character
+    # characters displayed need to be based on user somehow 
+    characters = Character.all
     respond_to do |format|
-      format.html {render:select_character}
+      format.html {render:select_character, locals: {characters: characters}}
     end
   end
 end
