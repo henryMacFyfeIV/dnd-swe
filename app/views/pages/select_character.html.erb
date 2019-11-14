@@ -1,0 +1,7 @@
+<%= link_to 'Create a new character', select_character_url %>
+
+<%# need to add a button next to each name [edit] [delete] %>
+<h2> select an existing character </h2>
+<% characters.each do |character| %>
+    <div> <%= character.name %> </div>
+<% end %>
