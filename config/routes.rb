@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root to: redirect('/home', status: 302)
   get 'home', to: 'pages#home', as: 'home'
   get 'create_an_account', to: 'pages#create_an_account', as:'create_an_account'
