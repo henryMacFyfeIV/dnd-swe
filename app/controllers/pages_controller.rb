@@ -33,7 +33,7 @@ class PagesController < ApplicationController
   end
   def select_character
     # characters displayed need to be based on user somehow 
-    characters = Character.all
+    characters = Character.where(user_id: current_user)
     respond_to do |format|
       format.html {render:select_character, locals: {characters: characters}}
     end
