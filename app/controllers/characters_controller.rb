@@ -9,8 +9,10 @@ class CharactersController < ApplicationController
 
     def create
         
-        character = Character.new(params.require(:character).permit(:background, user_id: current_user))
-        
+        character = Character.new(params.require(:character).permit(:background, :user_id ))
+        character.user_id = current_user.id
+        puts "CURRENT USER ID"
+        puts current_user.id
         respond_to do |format|
             format.html {  
                 if character.save!
