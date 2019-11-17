@@ -1,6 +1,14 @@
 <h1> Make a new character </h1>
 <%= form_with model: character, url: characters_path, method: :post, local: true, scope: :character do |form| %>    
     <div>
+        <%= form.label :character_class %><br>
+        <%= form.select :character_class,  ['Barbarian', 'Bard', 'Cleric', 'Druid', 'Fighter', 'Monk', 'Paladin', 'Ranger', 'Rogue', 'Sorcerer', 'Warlock', 'Wizard']%>
+    </div>
+     <div>
+        <%= form.label :race %><br>
+        <%= form.select :race,  ['Human', 'Elf', 'Dragonborn', 'Dwarf', 'Gnome', 'Half-Elf', 'Halfling', 'Half-Orc', 'Tiefling']%>
+    </div>
+    <div>
         <%= form.label :background %><br>
         <%= form.text_field :background %>
     </div>
