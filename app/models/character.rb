@@ -36,7 +36,14 @@
 #
 
 class Character < ApplicationRecord
-    belongs_to :user
+    belongs_to :user, optional: true
+    
+    validate :always_true
+
+    def always_true
+
+    end
+
 end
 
 
