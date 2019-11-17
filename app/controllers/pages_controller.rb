@@ -49,4 +49,5 @@ class PagesController < ApplicationController
       format.html {render:view_character, locals: {character1: character1}}
     end
   end
+  
 end

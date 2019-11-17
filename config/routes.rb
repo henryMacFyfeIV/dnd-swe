@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   get 'select_abilities', to: 'pages#select_abilities', as: 'select_abilities'
   post 'select_abilities', to: 'pages#select_new_abilities', as: 'select_new_abilities'
   get 'view_character', to: 'pages#view_character', as: 'view_character'
+  get 'characters/new', to: 'characters#new', as: 'new_character'
+  post 'characters', to: 'characters#create'
     # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
