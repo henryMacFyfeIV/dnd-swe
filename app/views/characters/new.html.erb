@@ -1,0 +1,8 @@
+<h1> Make a new character </h1>
+<%= form_with model: character, url: characters_path, method: :post, local: true, scope: :character do |form| %>    
+    <div>
+        <%= form.label :background %><br>
+        <%= form.text_field :background %>
+    </div>
+    <%= form.submit "Add Character" %>
+<% end %>

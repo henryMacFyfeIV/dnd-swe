@@ -32,10 +32,22 @@ class PagesController < ApplicationController
     end
   end
   def select_character
-    # characters displayed need to be based on user somehow 
-    characters = Character.all
+    params[:character_id]
+    characters = Character.where(user_id: current_user)
     respond_to do |format|
       format.html {render:select_character, locals: {characters: characters}}
     end
   end
+  def select_abilities
+    respond_to do |format|
+      format.html {render:select_abilities}
+    end
+  end
+  def view_character
+    character1 = Character.find(params[:id])
+    respond_to do |format|
+      format.html {render:view_character, locals: {character1: character1}}
+    end
+  end
+  
 end
