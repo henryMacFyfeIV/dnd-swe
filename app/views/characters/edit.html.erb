@@ -1,8 +1,8 @@
-<h1> Make a new character </h1>
+<h1> Update <%= character.name %> </h1>
  <% if flash.key? :error %>
    <p><%= flash[:error] %></p>
  <% end %>
-<%= form_with model: character, url: characters_path, method: :post, local: true, scope: :character do |form| %>    
+<%= form_with model: character, url: update_character_path, method: :patch, local: true, scope: :character do |form| %>    
     
     <div style="float: left">
         <%= form.label :name %><br>

@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   post 'select_abilities', to: 'pages#select_new_abilities', as: 'select_new_abilities'
   get 'view_character', to: 'pages#view_character', as: 'view_character'
   get 'characters/new', to: 'characters#new', as: 'new_character'
-  post 'characters', to: 'characters#create'
+  post 'characters', to: 'characters#create' 
+  get 'characters/:id/edit', to: 'characters#edit', as: 'edit_character'
+  match 'characters/:id', to: 'characters#update', via: [:put, :patch], as: 'update_character'
+  delete 'characters.:id', to: 'characters#destroy', as: 'delete_character'
     # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
