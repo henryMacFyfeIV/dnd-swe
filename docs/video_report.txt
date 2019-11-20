@@ -1,0 +1,26 @@
+# Video Report
+
+- Project: DungeonDudes
+- Milestone: M1
+- Demo Video: https://www.youtube.com/watch?v=reNCqrEuCw8&feature=youtu.be
+
+## Who Did What
+
+| Time Offset  | 0:00-2:45 |
+| ------------ | ----- |
+| Contributor  | Rhodes White |
+| Contribution | Home page, log in, sign up and associated functionality |
+| Pull Request | https://github.com/memphis-cs-projects/DungeonDudes/pull/8 |
+
+| Time Offset  | 2:54- ~7:20 |
+| ------------ | ----- |
+| Contributor  | Robb Aquadro and Mac Fyfe |
+| Contribution | Character form |
+| Pull Request | https://github.com/memphis-cs-projects/DungeonDudes/pull/10, https://github.com/memphis-cs-projects/DungeonDudes/pull/11 |
+
+| Time Offset  | ~7:20 - 9:34 |
+| ------------ | ----- |
+| Contributor  | Mac Fyfe |
+| Contribution | Display characters |
+| Pull Request | https://github.com/memphis-cs-projects/DungeonDudes/pull/12 |
+
