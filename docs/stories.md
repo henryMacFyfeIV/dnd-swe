@@ -10,7 +10,7 @@ Project: DnDnMe
 | Description | As a Jeff I want to login to DnDnMe so that I can use the website and access my characters: |
 | Estimate    | 1 Day |
 | Priority    | 10 |
-| Status      | Not Started |
+| Status      | Complete |
 
 
 
@@ -20,7 +20,7 @@ Project: DnDnMe
 | Description | As a Jeff I want to select the characters I have made or create a new character so that I can view/edit/create their character sheet|
 | Estimate    | .5 Day |
 | Priority    | 10 |
-| Status      | Not Started |
+| Status      | In progress (need edit) |
 
 ## Create a Character
 
@@ -38,7 +38,7 @@ Project: DnDnMe
 | Description | As a Jeff I want to select a race for my character. |
 | Estimate    | .5 Day |
 | Priority    | 10 |
-| Status      | Not Started |
+| Status      | Complete |
 
 | ID          | US5|
 | ----------- | ----- |
@@ -46,7 +46,7 @@ Project: DnDnMe
 | Description | As a Jeff I want to set abilities for my character. |
 | Estimate    | .5 Day |
 | Priority    | 10 |
-| Status      | Not Started |
+| Status      | Complete |
 
 | ID          | US6|
 | ----------- | ----- |
@@ -59,7 +59,7 @@ Project: DnDnMe
 | ID          |US7 |
 | ----------- | ----- |
 | Title       | Set a Character Image |
-| Description | As a Jeff I want to be able to add an image of my character to my character sheet so that I can view it |
+| Description | As a Jeff I want to be able to select an image of my character sheet so that I can view it |
 | Estimate    | 1 Day |
 | Priority    | 20 |
 | Status      | Not Started |
@@ -112,4 +112,4 @@ Project: DnDnMe
 | Description | As a Jeff I want to be able to view and edit my character |
 | Estimate    | 2 Day |
 | Priority    | 40 |
-| Status      | Not Started |
+| Status      | In progress (need to add edit) |
