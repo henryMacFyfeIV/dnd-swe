@@ -27,10 +27,10 @@ Project: DnDnMe
 | ID          | US3 |
 | ----------- | ----- |
 | Title       | Select a Class |
-| Description | As a Jeff I want to select a class for my charactr |
+| Description | As a Jeff I want to select a class for my character. |
 | Estimate    | .5 Day |
 | Priority    | 10 |
-| Status      | Not Started |
+| Status      | Complete |
 
 | ID          | US4|
 | ----------- | ----- |
@@ -113,3 +113,19 @@ Project: DnDnMe
 | Estimate    | 2 Day |
 | Priority    | 40 |
 | Status      | In progress (need to add edit) |
+
+| ID          | US14 |
+| ----------- | ----- |
+| Title       | Add armour to a character |
+| Description | As a Jeff I want to be able to add and view armour for my character |
+| Estimate    | 1 Day |
+| Priority    | 40 |
+| Status      | In progress |
+
+| ID          | US15 |
+| ----------- | ----- |
+| Title       | Add features to a character |
+| Description | As a Jeff I want to be able to add and view features for my character |
+| Estimate    | 1 Day |
+| Priority    | 40 |
+| Status      | In progress |
