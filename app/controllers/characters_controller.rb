@@ -9,7 +9,8 @@ class CharactersController < ApplicationController
 
     def create
         
-        character = Character.new(params.require(:character).permit(:name, :level, :background, :character_class, :race, :user_id, :strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma ))
+        character = Character.new(params.require(:character).permit(:name, :level, :background, :character_class, :race, :user_id, :strength, :dexterity, :constitution,
+                                                                    :intelligence, :wisdom, :charisma, :lvl4feat, :lvl8feat, :lvl12feat, :lvl16feat, :lvl19feat ))
         character.user_id = current_user.id
         respond_to do |format|
             format.html {  
@@ -35,7 +36,8 @@ class CharactersController < ApplicationController
         character = Character.find(params[:id])
         respond_to do |format|
             format.html{
-                if character.update(params.require(:character).permit(:name, :level, :background, :character_class, :race, :user_id, :strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma))
+                if character.update(params.require(:character).permit(:name, :level, :background, :character_class, :race, :user_id, :strength, :dexterity, :constitution,
+                                                                      :intelligence, :wisdom, :charisma, :lvl4feat, :lvl8feat, :lvl12feat, :lvl16feat, :lvl19feat))
                     flash[:success] = 'Saved your updated character!'
                     redirect_to select_character_url
                 else

@@ -29,6 +29,11 @@
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
 #  user_id         :integer
+#  lvl4feat        :string
+#  lvl8feat        :string
+#  lvl12feat       :string
+#  lvl16feat       :string
+#  lvl19feat       :string
 #
 # Indexes
 #

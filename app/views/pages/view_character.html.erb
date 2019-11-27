@@ -1,23 +1,60 @@
-<h2> <%= character1.name %> - lvl <%= character1.level %></h2> 
+<h2> <%= character1.name %> - Level <%= character1.level %> <%= character1.race %> <%= character1.character_class%> </h2> 
 
-Name : <%= character1.name %>
-<br>
-Background : <%= character1.background %>
-<br>
-Class : <%= character1.character_class %>
-<br>
-Race : <%= character1.race %>
-<br>
-Strength : <%= character1.strength %>
-<br>
-Dexterity : <%= character1.dexterity %>
-<br>
-Constitution : <%= character1.constitution %>
-<br>
-Intelligence : <%= character1.intelligence %>
-<br>
-Wisdom : <%= character1.wisdom %>
-<br>
-Charisma: <%= character1.charisma %>
-<br>
-<%= link_to 'back to character select', select_character_url %>
+<div style="float: left; padding-right:2rem; display:inline-block; width: 33%;">
+    <h3>Background and Feats</h3>
+    Background : <%= character1.background %>
+    <br>
+    Level 4 Feat : <%= character1.lvl4feat %>
+    <br>
+    Level 8 Feat : <%= character1.lvl8feat %>
+    <br>
+    Level 12 Feat : <%= character1.lvl12feat %>
+    <br>
+    Level 16 Feat : <%= character1.lvl16feat %>
+    <br>
+    Level 19 Feat : <%= character1.lvl19feat %>
+    <br>
+</div>
+<div style="float: left; padding-right:2rem; display:inline-block; width: 33%;">
+    <h3>Attributes</h3>
+    Strength : <%= [character1.strength + modifiers[0], 20].min %> <!--A characters attributes can only go up to 20-->
+    <br>
+    Dexterity : <%= [character1.dexterity + modifiers[1], 20].min %>
+    <br>
+    Constitution : <%= [character1.constitution + modifiers[2], 20].min %>
+    <br>
+    Intelligence : <%= [character1.intelligence + modifiers[3], 20].min %>
+    <br>
+    Wisdom : <%= [character1.wisdom + modifiers[4], 20].min %>
+    <br>
+    Charisma: <%= [character1.charisma + modifiers[5], 20].min %>
+    <br>
+</div>
+<div style="float: left; padding-right:2rem; display:inline-block; width: 33%;">
+    <h3>Modifiers</h3>
+    Strength : <%= (character1.strength + modifiers[0] + 1 - 10) / 2%>
+    <br>
+    Dexterity : <%= (character1.dexterity + modifiers[1] - 10) / 2%>
+    <br>
+    Constitution : <%= (character1.constitution + modifiers[2] - 10) / 2%>
+    <br>
+    Intelligence : <%= (character1.intelligence + modifiers[3] - 10) / 2%>
+    <br>
+    Wisdom : <%= (character1.wisdom + modifiers[4] - 10) / 2%>
+    <br>
+    Charisma: <%= (character1.charisma + modifiers[5] - 10) / 2%>
+    <br>
+</div>
+
+<div style="float: left; padding-right:2rem; display:inline-block; width: 33%;">
+    <% feat_list.each do |feat| %>
+        <% if feat != nil %>
+            <h5><%= feat.name  %></h5>
+            <div style="padding:1rem;"><%= feat.description  %></div>
+            <br> 
+        <% end %>
+    <% end %>
+</div>
+<div style="display: inline-block; width: 100%">
+    <%= link_to 'back to character select', select_character_url %>
+</div>
