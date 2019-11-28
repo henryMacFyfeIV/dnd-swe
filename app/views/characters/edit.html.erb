@@ -4,7 +4,7 @@
  <% end %>
 <%= form_with model: character, url: update_character_path, method: :patch, local: true, scope: :character do |form| %>    
     
-    <div style="float: left">
+    <div style="float: left; padding-right:2rem">
         <%= form.label :name %><br>
         <%= form.text_field :name %><br>
         <%= form.label :level %><br>
@@ -17,6 +17,38 @@
         <%= form.select :background, ['Acolyte', 'Charlatan', 'Criminal', 'Entertainer', 
                                       'Folk Hero', 'Gladiator', 'Guild Artisan', 'Guild Merchant', 'Hermit', 
                                       'Knight', 'Noble', 'Outlander', 'Pirate', 'Sage', 'Sailor', 'Solder', 'Spy', 'Urchin'] %><br>
+    </div>
+    <div style="float: left; padding-right:2rem">
+        <%= form.label "Level 4 Feat" %><br>
+        <%= form.select :lvl4feat, ['None', 'Actor','Alert','Athlete (Strength)','Athlete (Dexterity)','Charger','Crossbow Expert','Defensive Duelist','Dual Wielder','Dungeon Delver',
+                                'Durable','Elemental Adept','Grappler','Great Weapon Master','Healer','Heavily Armored','Heavy Armor Master',
+                                'Inspiring Leader','Keen Mind','Lightly Armored (Strength)','Lightly Armored (Dexterity)','Linguist','Lucky','Mage Slayer','Magic Initiate','Martial Adept',
+                                'Medium Armor Master','Mobile','Moderately Armored (Strength)','Moderately Armored (Dexterity)','Observant (Intelligence)','Observant (Wisdom)','Polearm Master','Resilient','Ritual Caster','Savage Attacker',
+                                'Sentinel','Sharpshooter','Shield Master','Skilled','Skulker','Spell Sniper','Tavern Brawler (Strength)','Tavern Brawler (Constitution)','Tough','War Caster','Weapon Master (Strength)','Weapon Master (Dexterity)'] %><br>
+        <%= form.label "Level 8 Feat" %><br>
+        <%= form.select :lvl8feat, ['None', 'Actor','Alert','Athlete (Strength)','Athlete (Dexterity)','Charger','Crossbow Expert','Defensive Duelist','Dual Wielder','Dungeon Delver',
+                                'Durable','Elemental Adept','Grappler','Great Weapon Master','Healer','Heavily Armored','Heavy Armor Master',
+                                'Inspiring Leader','Keen Mind','Lightly Armored (Strength)','Lightly Armored (Dexterity)','Linguist','Lucky','Mage Slayer','Magic Initiate','Martial Adept',
+                                'Medium Armor Master','Mobile','Moderately Armored (Strength)','Moderately Armored (Dexterity)','Observant (Intelligence)','Observant (Wisdom)','Polearm Master','Resilient','Ritual Caster','Savage Attacker',
+                                'Sentinel','Sharpshooter','Shield Master','Skilled','Skulker','Spell Sniper','Tavern Brawler (Strength)','Tavern Brawler (Constitution)','Tough','War Caster','Weapon Master (Strength)','Weapon Master (Dexterity)'] %><br>
+        <%= form.label "Level 12 Feat" %><br>
+        <%= form.select :lvl12feat, ['None', 'Actor','Alert','Athlete (Strength)','Athlete (Dexterity)','Charger','Crossbow Expert','Defensive Duelist','Dual Wielder','Dungeon Delver',
+                                'Durable','Elemental Adept','Grappler','Great Weapon Master','Healer','Heavily Armored','Heavy Armor Master',
+                                'Inspiring Leader','Keen Mind','Lightly Armored (Strength)','Lightly Armored (Dexterity)','Linguist','Lucky','Mage Slayer','Magic Initiate','Martial Adept',
+                                'Medium Armor Master','Mobile','Moderately Armored (Strength)','Moderately Armored (Dexterity)','Observant (Intelligence)','Observant (Wisdom)','Polearm Master','Resilient','Ritual Caster','Savage Attacker',
+                                'Sentinel','Sharpshooter','Shield Master','Skilled','Skulker','Spell Sniper','Tavern Brawler (Strength)','Tavern Brawler (Constitution)','Tough','War Caster','Weapon Master (Strength)','Weapon Master (Dexterity)'] %><br>
+        <%= form.label "Level 16 Feat" %><br>
+        <%= form.select :lvl16feat, ['None', 'Actor','Alert','Athlete (Strength)','Athlete (Dexterity)','Charger','Crossbow Expert','Defensive Duelist','Dual Wielder','Dungeon Delver',
+                                'Durable','Elemental Adept','Grappler','Great Weapon Master','Healer','Heavily Armored','Heavy Armor Master',
+                                'Inspiring Leader','Keen Mind','Lightly Armored (Strength)','Lightly Armored (Dexterity)','Linguist','Lucky','Mage Slayer','Magic Initiate','Martial Adept',
+                                'Medium Armor Master','Mobile','Moderately Armored (Strength)','Moderately Armored (Dexterity)','Observant (Intelligence)','Observant (Wisdom)','Polearm Master','Resilient','Ritual Caster','Savage Attacker',
+                                'Sentinel','Sharpshooter','Shield Master','Skilled','Skulker','Spell Sniper','Tavern Brawler (Strength)','Tavern Brawler (Constitution)','Tough','War Caster','Weapon Master (Strength)','Weapon Master (Dexterity)'] %><br>
+        <%= form.label "Level 19 Feat" %><br>
+        <%= form.select :lvl19feat, ['None', 'Actor','Alert','Athlete (Strength)','Athlete (Dexterity)','Charger','Crossbow Expert','Defensive Duelist','Dual Wielder','Dungeon Delver',
+                                'Durable','Elemental Adept','Grappler','Great Weapon Master','Healer','Heavily Armored','Heavy Armor Master',
+                                'Inspiring Leader','Keen Mind','Lightly Armored (Strength)','Lightly Armored (Dexterity)','Linguist','Lucky','Mage Slayer','Magic Initiate','Martial Adept',
+                                'Medium Armor Master','Mobile','Moderately Armored (Strength)','Moderately Armored (Dexterity)','Observant (Intelligence)','Observant (Wisdom)','Polearm Master','Resilient','Ritual Caster','Savage Attacker',
+                                'Sentinel','Sharpshooter','Shield Master','Skilled','Skulker','Spell Sniper','Tavern Brawler (Strength)','Tavern Brawler (Constitution)','Tough','War Caster','Weapon Master (Strength)','Weapon Master (Dexterity)'] %><br>
     </div>
     
 
