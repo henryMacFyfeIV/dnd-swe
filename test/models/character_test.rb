@@ -34,6 +34,7 @@
 #  lvl12feat       :string
 #  lvl16feat       :string
 #  lvl19feat       :string
+#  description     :text
 #
 # Indexes
 #

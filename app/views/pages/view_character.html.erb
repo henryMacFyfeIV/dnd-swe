@@ -1,4 +1,9 @@
-<h2> <%= character1.name %> - Level <%= character1.level %> <%= character1.race %> <%= character1.character_class%> <%= image_tag "classes/#{character1.character_class}.png", height: 150 %></h2> 
+<h2> <%= character1.name %> - Level <%= character1.level %> <%= character1.race %> <%= character1.character_class%> <%= image_tag "classes/#{character1.character_class}.png", height: 150 %> </h2> 
+
+<div>
+    <h3> Character Description </h3>
+    <%= character1.description %> 
+</div>
 
 <div style="float: left; padding-right:2rem; display:inline-block; width: 33%;">
     <h3>Background and Feats</h3>
