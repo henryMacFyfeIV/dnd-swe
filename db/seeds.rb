@@ -12,9 +12,10 @@ char2 = Character.create!(user:user1, name:'Skyrim Guy', character_class:'Cleric
 char3 = Character.create!(user:user2, name:'Voldemort', character_class:'Monk', level:42, background:'Orphan', race:'Guy', alignment:'Evil', experience:654, armor_class:20,initiative:2,speed:30, max_hp:1000,current_hp: 340,temporary_hp:300,saves_success:0,saves_failures:2,strength:50,dexterity:3,constitution:1,intelligence:1,wisdom:4,charisma:3,inspiration:2,proficiency:16)
 
 
+item1 = Item.create!(name:'Barrel', description:"A barrel can hold 40 gallons of liquid or 4 cubic feet of solids.", category:'item')
+item2 = Item.create!(name:'Rope of Entanglement', description:"This rope is 30 feet long and weighs 3 pounds. If you hold one end of the rope and use an action to speak its Command Word, the other end darts forward to Entangle a creature you can see within 20 feet of you. The target must succeed on a DC 15 Dexterity saving throw or become Restrained.", category:'item')
 
-
-
+ConcreteItem.create!(count:5, item:item2, character:char1)
 
 
 
