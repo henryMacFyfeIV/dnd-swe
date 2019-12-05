@@ -41,6 +41,7 @@
 #  index_characters_on_user_id  (user_id)
 #
 
+
 class Character < ApplicationRecord
     belongs_to :user, optional: true
     

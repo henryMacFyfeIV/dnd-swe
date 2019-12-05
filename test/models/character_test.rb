@@ -41,6 +41,7 @@
 #  index_characters_on_user_id  (user_id)
 #
 
+
 require 'test_helper'
 
 class CharacterTest < ActiveSupport::TestCase
