@@ -19,6 +19,7 @@
 #  saves_success   :integer
 #  saves_failures  :integer
 #  strength        :integer
+
 #  dexterity       :integer
 #  constitution    :integer
 #  intelligence    :integer

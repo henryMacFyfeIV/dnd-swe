@@ -63,14 +63,27 @@
 
 <div >
     <h3>Backpack</h3>
-    <%# move this to the bottom of the page and style it. %>
-    <% items.each do |c_item| %>
-        <%= c_item.item.name %>
-        <%= c_item.count %>
-        <%= c_item. %>
-    <% end %>
+    <%# style it (maybe as a table). %>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Amount</th>
+            <th>Description</th>
+        </tr>
+        <tbody>
+            <% items.each do |c_item| %>
+                <tr>
+                    <td><%= c_item.item.name %></td>
+                    <td><%= c_item.count %></td>
+                    <td><%= c_item.item.description %></td>
+                <tr>    
+            <% end %>
+            
+        </tbody>
+    
+    </table>
 </div>
 
-<div style="display: inline-block; width: 100%">
+<div style="display: inline-block; width: 100%;">
     <%= link_to 'back to character select', select_character_url %>
 </div>
