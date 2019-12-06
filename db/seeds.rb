@@ -7,16 +7,28 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 user1 = User.create! :email => 'jeff@gmail.com', :password => 'password', :password_confirmation => 'password'
 user2 = User.create! :email => 'bob@gmail.com', :password => 'password1', :password_confirmation => 'password1'
-char1 = Character.create!(user:user1, name:'Bilbo', character_class:'Warlock', level:17, background:'Street Urchin', race:'Elf', alignment:'Good', experience:450, armor_class:4,initiative:12,speed:45, max_hp:900,current_hp: 600,temporary_hp:400,saves_success:2,saves_failures:1,strength:5,dexterity:13,constitution:14,intelligence:19,wisdom:9,charisma:2,inspiration:23,proficiency:11,description:'He is a guy from lord of the ringss and the hobbit',lvl4feat:'Actor',lvl8feat:'Alert',lvl12feat:'Charger')
-char2 = Character.create!(user:user1, name:'Skyrim Guy', character_class:'Cleric', level:42, background:'Orphan', race:'Dragonborn', alignment:'Nuetral', experience:654, armor_class:20,initiative:2,speed:30, max_hp:1000,current_hp: 340,temporary_hp:300,saves_success:0,saves_failures:2,strength:50,dexterity:3,constitution:1,intelligence:1,wisdom:4,charisma:3,inspiration:2,proficiency:16)
-char3 = Character.create!(user:user2, name:'Voldemort', character_class:'Monk', level:42, background:'Orphan', race:'Guy', alignment:'Evil', experience:654, armor_class:20,initiative:2,speed:30, max_hp:1000,current_hp: 340,temporary_hp:300,saves_success:0,saves_failures:2,strength:50,dexterity:3,constitution:1,intelligence:1,wisdom:4,charisma:3,inspiration:2,proficiency:16)
+char1 = Character.create!(user:user1, name:'Bilbo', character_class:'Warlock', level:19, background:'Street Urchin', race:'Elf', alignment:'Good', experience:450, armor_class:4,initiative:12,speed:15, max_hp:900,current_hp: 600,temporary_hp:400,saves_success:2,saves_failures:1,strength:5,dexterity:13,constitution:14,intelligence:19,wisdom:9,charisma:5,inspiration:23,proficiency:11,description:'He is a guy from lord of the ringss and the hobbit',lvl4feat:'Actor',lvl8feat:'Alert',lvl12feat:'Charger')
+char2 = Character.create!(user:user1, name:'Skyrim Guy', character_class:'Cleric', level:8, background:'Orphan', race:'Dragonborn', alignment:'Nuetral', experience:654, armor_class:20,initiative:2,speed:15, max_hp:1000,current_hp: 340,temporary_hp:300,saves_success:0,saves_failures:2,strength:19,dexterity:3,constitution:10,intelligence:11,wisdom:14,charisma:13,inspiration:12,proficiency:16,description:"a Dragonborn, a mortal born with the soul and power of a dragon.",lvl4feat:'Heavy Armor Master', lvl8feat:'Keen Mind')
+char3 = Character.create!(user:user2, name:'Voldemort', character_class:'Monk', level:4, background:'Orphan', race:'Guy', alignment:'Evil', experience:654, armor_class:20,initiative:2,speed:30, max_hp:1000,current_hp: 340,temporary_hp:300,saves_success:0,saves_failures:2,strength:50,dexterity:3,constitution:1,intelligence:1,wisdom:4,charisma:3,inspiration:2,proficiency:16)
 
 
+item1 = Item.create!(name:'Barrel', description:"A barrel can hold 40 gallons of liquid or 4 cubic feet of solids.", category:'item')
+item2 = Item.create!(name:'Rope of Entanglement', description:"This rope is 30 feet long and weighs 3 pounds. If you hold one end of the rope and use an action to speak its Command Word, the other end darts forward to Entangle a creature you can see within 20 feet of you. The target must succeed on a DC 15 Dexterity saving throw or become Restrained.", category:'item')
+item3 = Item.create!(name:'Antitoxin', description:"A creature that drinks this vial of liquid gains advantage on Saving Throws against poison for 1 hour. It confers no benefit to Undead or constructs.", category:'item')
+item4 = Item.create!(name:'Chain', description:"A chain has 10 Hit Points. It can be burst with a successful DC 20 Strength check.", category:'item')
+item5 = Item.create!(name:'Cobbler\'s Tools', description:"These Special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your Proficiency Bonus to any Ability Checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.", category:'item')
+item6 = Item.create!(name:'Crowbar', description:"Using a crowbar grants advantage to Strength Checks where the crowbar's leverage can be applied.", category:'item')
+item7 = Item.create!(name:'Crystal Ball', description:"This Crystal ball is about 6 inches in diameter. While touching it, you can cast the Scrying spell (save DC 17) with it.", category:'item')
+item8 = Item.create!(name:'Goggles of Night', description:"While wearing these dark lenses, you have Darkvision out to a range of 60 feet. If you already have Darkvision. wearing the goggles increases its range by 60 feet.", category:'item')
+item9 = Item.create!(name:'Fishing tackle', description:"This kit includes a wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting.", category:'item')
+item0 = Item.create!(name:'Trident of Fish Command', description:"While you carry it, you can use an action and expend 1 charge to cast Dominate Beast (save DC 15) from it on a beast that has an innate swimming speed.", category:'item')
 
+ConcreteItem.create!(count:5, item:item2, character:char1)
+ConcreteItem.create!(count:1, item:item8, character:char1)
+ConcreteItem.create!(count:1, item:item4, character:char1)
 
-
-
-
+ConcreteItem.create!(count:1, item:item5, character:char2)
+ConcreteItem.create!(count:1, item:item6, character:char2)
 
 
 
