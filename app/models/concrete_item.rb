@@ -16,6 +16,6 @@
 #
 
 class ConcreteItem < ApplicationRecord
-    belongs_to :item, optional: true
-    belongs_to :character, optional: true
+    belongs_to :item
+    belongs_to :character
 end
