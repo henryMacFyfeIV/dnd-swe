@@ -46,7 +46,7 @@ class PagesController < ApplicationController
   def view_character
     # needs to check feats/race/traits/items to determin attribute bonus.
     character1 = Character.find(params[:id])
-    weapons = ConcreteWeapon.where(character_id:character_id)
+    weapons = ConcreteWeapon.where(character_id:character1.id)
     strength_modifier = 0
     dexterity_modifier = 0
     constitution_modifier = 0

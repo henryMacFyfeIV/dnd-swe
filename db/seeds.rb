@@ -71,3 +71,13 @@ Feat.create!(name:'Tough', description:"Your hit point maximum increases by an a
 Feat.create!(name:'War Caster', description:"You have practiced casting spells in the midst of combat, learning techniques that grant you the following benefits: You have advantage on Constitution saving throws that you make to maintain your concentration on a spell when you take damage. You can perform the somatic components of spells even when you have weapons or a shield in one or both hands. When a hostile creature’s movement provokes an opportunity attack from you, you can use your reaction to cast a spell at the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature. ")
 Feat.create!(name:'Weapon Master (Strength)', description:"You have practiced extensively with a variety of weapons, gaining the following benefits: Increase your Strength score by 1, to a maximum of 20. You gain proficiency with four weapons of your choice. ")
 Feat.create!(name:'Weapon Master (Dexterity)', description:"You have practiced extensively with a variety of weapons, gaining the following benefits: Increase your Dexterity score by 1, to a maximum of 20. You gain proficiency with four weapons of your choice. ")
+
+
+weapon1 = Weapon.create!(name: 'Battleaxe', cost: '10 gp', damage: '1d8 slashing', weight: '4 lb', properties: 'Versatile (1d10)')
+Weapon.create!(name: 'Club', cost: '1 sp', damage: '1d4 bludgeoning',  weight: '2 lb', properties: 'Light' )
+Weapon.create!(name: 'Dagger', cost: '2 gp', damage: '1d4 piercing', weight: '1 lb', properties: 'Finesse, Light, thrown (range 20/60)' )
+Weapon.create!(name: 'Greatclub', cost: '2 sp', damage: '1d8 bludgeoning', weight: '10 lb', properties: 'Two-handed' )
+Weapon.create!(name: 'Handaxe', cost: '5 gp', damage: '1d6 slashing', weight: '2 lb', properties: 'Light, thrown(range 20/60' )
+Weapon.create!(name: 'Javelin', cost: '5 sp', damage: '1d6 piercing', weight: '2 lb', properties: 'Thrown (range 30/120)' )
+
+ConcreteWeapon.create!(count:1, weapon:weapon1, character:char1)

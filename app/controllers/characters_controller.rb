@@ -25,6 +25,8 @@ class CharactersController < ApplicationController
                 end
             }    
         end
+        ConcreteWeapon.create!(count: 1, weapon_id: rand(1..5), character_id: character.id)
+        ConcreteWeapon.create!(count: 1, weapon_id: rand(1..5), character_id: character.id)
     end
     def edit
         character = Character.find(params[:id])

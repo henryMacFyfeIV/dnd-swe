@@ -16,4 +16,6 @@
 #
 
 class ConcreteWeapon < ApplicationRecord
+    belongs_to :weapon, optional: true
+    belongs_to :character, optional: true
 end
