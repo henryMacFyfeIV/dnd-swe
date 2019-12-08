@@ -7,16 +7,35 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 user1 = User.create! :email => 'jeff@gmail.com', :password => 'password', :password_confirmation => 'password'
 user2 = User.create! :email => 'bob@gmail.com', :password => 'password1', :password_confirmation => 'password1'
-char1 = Character.create!(user:user1, name:'Bilbo', character_class:'Warlock', level:17, background:'Street Urchin', race:'Elf', alignment:'Good', experience:450, armor_class:4,initiative:12,speed:45, max_hp:900,current_hp: 600,temporary_hp:400,saves_success:2,saves_failures:1,strength:5,dexterity:13,constitution:14,intelligence:19,wisdom:9,charisma:2,inspiration:23,proficiency:11,description:'He is a guy from lord of the ringss and the hobbit',lvl4feat:'Actor',lvl8feat:'Alert',lvl12feat:'Charger')
-char2 = Character.create!(user:user1, name:'Skyrim Guy', character_class:'Cleric', level:42, background:'Orphan', race:'Dragonborn', alignment:'Nuetral', experience:654, armor_class:20,initiative:2,speed:30, max_hp:1000,current_hp: 340,temporary_hp:300,saves_success:0,saves_failures:2,strength:50,dexterity:3,constitution:1,intelligence:1,wisdom:4,charisma:3,inspiration:2,proficiency:16)
-char3 = Character.create!(user:user2, name:'Voldemort', character_class:'Monk', level:42, background:'Orphan', race:'Guy', alignment:'Evil', experience:654, armor_class:20,initiative:2,speed:30, max_hp:1000,current_hp: 340,temporary_hp:300,saves_success:0,saves_failures:2,strength:50,dexterity:3,constitution:1,intelligence:1,wisdom:4,charisma:3,inspiration:2,proficiency:16)
+char1 = Character.create!(user:user1, name:'Bilbo', character_class:'Warlock', level:19, background:'Street Urchin', race:'Elf', alignment:'Good', experience:450, armor_class:4,initiative:12,speed:15, max_hp:900,current_hp: 600,temporary_hp:400,saves_success:2,saves_failures:1,strength:5,dexterity:13,constitution:14,intelligence:19,wisdom:9,charisma:5,inspiration:23,proficiency:11,description:'He is a guy from lord of the ringss and the hobbit',lvl4feat:'Actor',lvl8feat:'Alert',lvl12feat:'Charger')
+char2 = Character.create!(user:user1, name:'Skyrim Guy', character_class:'Cleric', level:8, background:'Orphan', race:'Dragonborn', alignment:'Nuetral', experience:654, armor_class:20,initiative:2,speed:15, max_hp:1000,current_hp: 340,temporary_hp:300,saves_success:0,saves_failures:2,strength:19,dexterity:3,constitution:10,intelligence:11,wisdom:14,charisma:13,inspiration:12,proficiency:16,description:"a Dragonborn, a mortal born with the soul and power of a dragon.",lvl4feat:'Heavy Armor Master', lvl8feat:'Keen Mind')
+char3 = Character.create!(user:user2, name:'Voldemort', character_class:'Monk', level:4, background:'Orphan', race:'Guy', alignment:'Evil', experience:654, armor_class:20,initiative:2,speed:30, max_hp:1000,current_hp: 340,temporary_hp:300,saves_success:0,saves_failures:2,strength:50,dexterity:3,constitution:1,intelligence:1,wisdom:4,charisma:3,inspiration:2,proficiency:16)
 
 
+item1 = Item.create!(name:'Trident of Fish Command', description:"While you carry it, you can use an action and expend 1 charge to cast Dominate Beast (save DC 15) from it on a beast that has an innate swimming speed.", category:'item')
+item2 = Item.create!(name:'Barrel', description:"A barrel can hold 40 gallons of liquid or 4 cubic feet of solids.", category:'item')
+item3 = Item.create!(name:'Rope of Entanglement', description:"This rope is 30 feet long and weighs 3 pounds. If you hold one end of the rope and use an action to speak its Command Word, the other end darts forward to Entangle a creature you can see within 20 feet of you. The target must succeed on a DC 15 Dexterity saving throw or become Restrained.", category:'item')
+item4 = Item.create!(name:'Antitoxin', description:"A creature that drinks this vial of liquid gains advantage on Saving Throws against poison for 1 hour. It confers no benefit to Undead or constructs.", category:'item')
+item5 = Item.create!(name:'Chain', description:"A chain has 10 Hit Points. It can be burst with a successful DC 20 Strength check.", category:'item')
+Item.create!(name:'Cobbler\'s Tools', description:"These Special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your Proficiency Bonus to any Ability Checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.", category:'item')
+Item.create!(name:'Crowbar', description:"Using a crowbar grants advantage to Strength Checks where the crowbar's leverage can be applied.", category:'item')
+Item.create!(name:'Crystal Ball', description:"This Crystal ball is about 6 inches in diameter. While touching it, you can cast the Scrying spell (save DC 17) with it.", category:'item')
+Item.create!(name:'Goggles of Night', description:"While wearing these dark lenses, you have Darkvision out to a range of 60 feet. If you already have Darkvision. wearing the goggles increases its range by 60 feet.", category:'item')
+Item.create!(name:'Fishing tackle', description:"This kit includes a wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting.", category:'item')
+Item.create!(name:'Circlet of Blasting', description:"While wearing this circlet, you can use an action to cast the Scorching Ray spell with it. When you make the spell's attacks, you do so with an Attack bonus of +5. The circlet can't be used this way again until the next dawn.", category:'item')
+Item.create!(name:'Chest', description:"A chest holds 12 cubic feet or 300 pounds of gear.", category:'item')
+Item.create!(name:'Chalk', description:"You can use it to draw things on the ground or maybe a chalkboard", category:'item')
+Item.create!(name:'Fishing tackle', description:"This kit includes a wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting.", category:'item')
+Item.create!(name:'Hooded lantern', description:"A hooded lantern casts bright light in a 30-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil. As an action, you can lower the hood, reducing the light to dim light in a 5-foot radius.", category:'item')
+Item.create!(name:'Holy Water', description:"As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged Attack against a target creature, treating the holy water as an Improvised Weapon. If the target is a fiend or Undead, it takes 2d6 radiant damage. A Cleric or Paladin may create holy water by performing a Special ritual. The ritual takes 1 hour to perform, uses 25 gp worth of powdered silver, and requires the caster to expend a 1st-level spell slot.", category:'item')
+Item.create!(name:'Lock', description:"A key is provided with the lock. Without the key, a creature proficient with Thieves' Tools can pick this lock with a successful DC 15 Dexterity check. Your DM may decide that better locks are available for higher prices.", category:'item')
 
+ConcreteItem.create!(count:5, item:item1, character:char1)
+ConcreteItem.create!(count:1, item:item2, character:char1)
+ConcreteItem.create!(count:1, item:item3, character:char1)
 
-
-
-
+ConcreteItem.create!(count:1, item:item4, character:char2)
+ConcreteItem.create!(count:1, item:item5, character:char2)
 
 
 

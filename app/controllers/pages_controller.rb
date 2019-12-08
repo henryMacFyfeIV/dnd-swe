@@ -47,6 +47,7 @@ class PagesController < ApplicationController
     # needs to check feats/race/traits/items to determin attribute bonus.
     character1 = Character.find(params[:id])
     weapons = ConcreteWeapon.where(character_id:character1.id)
+    items = ConcreteItem.where(character_id:character1.id)
     strength_modifier = 0
     dexterity_modifier = 0
     constitution_modifier = 0
@@ -85,7 +86,7 @@ class PagesController < ApplicationController
     end
     modifiers = [strength_modifier, dexterity_modifier, constitution_modifier, intelligence_modifier, wisdom_modifier, charisma_modifier]
     respond_to do |format|
-      format.html {render:view_character, locals: {character1: character1, modifiers: modifiers, feat_list: feat_list, weapons: weapons}}
+      format.html {render:view_character, locals: {character1: character1, modifiers: modifiers, feat_list: feat_list, items: items, weapons: weapons}}
     end
   end
   

@@ -61,9 +61,27 @@ ActiveRecord::Schema.define(version: 2019_12_05_043503) do
     t.index ["weapon_id"], name: "index_concrete_weapons_on_weapon_id"
   end
 
+  create_table "concrete_items", force: :cascade do |t|
+    t.integer "count"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "character_id"
+    t.bigint "item_id"
+    t.index ["character_id"], name: "index_concrete_items_on_character_id"
+    t.index ["item_id"], name: "index_concrete_items_on_item_id"
+  end
+
   create_table "feats", force: :cascade do |t|
     t.string "name"
     t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "items", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.string "category"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -93,4 +111,6 @@ ActiveRecord::Schema.define(version: 2019_12_05_043503) do
   add_foreign_key "characters", "users"
   add_foreign_key "concrete_weapons", "characters"
   add_foreign_key "concrete_weapons", "weapons"
+  add_foreign_key "concrete_items", "characters"
+  add_foreign_key "concrete_items", "items"
 end

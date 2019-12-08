@@ -12,6 +12,7 @@ class CharactersController < ApplicationController
         character = Character.new(params.require(:character).permit(:name, :level, :background, :character_class, :race, :user_id, :strength, :dexterity, :constitution,
                                                                     :intelligence, :wisdom, :charisma, :lvl4feat, :lvl8feat, :lvl12feat, :lvl16feat, :lvl19feat, :description ))
         character.user_id = current_user.id
+        
         respond_to do |format|
             format.html {  
                 if character.save!
@@ -27,6 +28,9 @@ class CharactersController < ApplicationController
         end
         ConcreteWeapon.create!(count: 1, weapon_id: rand(1..5), character_id: character.id)
         ConcreteWeapon.create!(count: 1, weapon_id: rand(1..5), character_id: character.id)
+        ConcreteItem.create!(count: rand(1..3), item_id: rand(1..10), character_id: character.id)
+        ConcreteItem.create!(count: rand(1..3), item_id: rand(1..10), character_id: character.id)
+        ConcreteItem.create!(count: rand(1..3), item_id: rand(1..10), character_id: character.id)
     end
     def edit
         character = Character.find(params[:id])

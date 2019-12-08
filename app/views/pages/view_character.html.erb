@@ -80,10 +80,32 @@
                 <td><%= c_weapon.weapon.properties%></td>
             <tr>
         <% end %>
+<div >
+    <h3>Backpack</h3>
+    <%# style it (maybe as a table). %>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Amount</th>
+            <th>Description</th>
+        </tr>
+        <tbody>
+            <% items.each do |c_item| %>
+                <tr>
+                    <td><%= c_item.item.name %></td>
+                    <td><%= c_item.count %></td>
+                    <td><%= c_item.item.description %></td>
+                <tr>    
+            <% end %>
+            
+        </tbody>
+    
+    </table>
+</div>
 
     </tbody>
 </table>
 
-<div style="display: inline-block; width: 100%">
+<div style="display: inline-block; width: 100%;">
     <%= link_to 'back to character select', select_character_url %>
 </div>
