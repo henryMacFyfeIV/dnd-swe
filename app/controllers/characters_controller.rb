@@ -26,6 +26,8 @@ class CharactersController < ApplicationController
                 end
             }    
         end
+        ConcreteWeapon.create!(count: 1, weapon_id: rand(1..5), character_id: character.id)
+        ConcreteWeapon.create!(count: 1, weapon_id: rand(1..5), character_id: character.id)
         ConcreteItem.create!(count: rand(1..3), item_id: rand(1..10), character_id: character.id)
         ConcreteItem.create!(count: rand(1..3), item_id: rand(1..10), character_id: character.id)
         ConcreteItem.create!(count: rand(1..3), item_id: rand(1..10), character_id: character.id)

@@ -61,6 +61,28 @@
     <% end %>
 </div>
 
+<div>
+<table>
+    
+    <tr>
+        <th>Weapon</th>
+        <th>Cost</th>
+        <th>Damage</th>
+        <th>Weight</th>
+        <th>Properties</th>
+    </tr>
+    <tbody>
+        <% weapons.each do |c_weapon| %>
+            <tr>
+                <td><%= c_weapon.weapon.name%></td>
+                <td><%= c_weapon.weapon.cost%></td>
+                <td><%= c_weapon.weapon.damage%></td>
+                <td><%= c_weapon.weapon.weight%></td>
+                <td><%= c_weapon.weapon.properties%></td>
+            <tr>
+        <% end %>
+</div>
+
 <div >
     <h3>Backpack</h3>
     <%# style it (maybe as a table). %>
@@ -83,6 +105,9 @@
     
     </table>
 </div>
+
+    </tbody>
+</table>
 
 <div style="display: inline-block; width: 100%;">
     <%= link_to 'back to character select', select_character_url %>

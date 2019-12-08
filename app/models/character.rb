@@ -65,6 +65,7 @@
 
 class Character < ApplicationRecord
     belongs_to :user, optional: true
+    has_many :concrete_weapons, dependent: :destroy
     has_many :concrete_items, dependent: :destroy
     
     

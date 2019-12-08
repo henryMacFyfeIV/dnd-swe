@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_03_230232) do
+ActiveRecord::Schema.define(version: 2019_12_05_043503) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,6 +51,16 @@ ActiveRecord::Schema.define(version: 2019_12_03_230232) do
     t.index ["user_id"], name: "index_characters_on_user_id"
   end
 
+  create_table "concrete_weapons", force: :cascade do |t|
+    t.integer "count"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "character_id"
+    t.bigint "weapon_id"
+    t.index ["character_id"], name: "index_concrete_weapons_on_character_id"
+    t.index ["weapon_id"], name: "index_concrete_weapons_on_weapon_id"
+  end
+
   create_table "concrete_items", force: :cascade do |t|
     t.integer "count"
     t.datetime "created_at", precision: 6, null: false
@@ -88,7 +98,19 @@ ActiveRecord::Schema.define(version: 2019_12_03_230232) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  create_table "weapons", force: :cascade do |t|
+    t.string "name"
+    t.string "cost"
+    t.string "damage"
+    t.string "weight"
+    t.string "properties"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   add_foreign_key "characters", "users"
+  add_foreign_key "concrete_weapons", "characters"
+  add_foreign_key "concrete_weapons", "weapons"
   add_foreign_key "concrete_items", "characters"
   add_foreign_key "concrete_items", "items"
 end
