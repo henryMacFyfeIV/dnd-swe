@@ -20,7 +20,7 @@ Project: DnDnMe
 | Description | As a Jeff I want to select the characters I have made or create a new character so that I can view/edit/create their character sheet|
 | Estimate    | .5 Day |
 | Priority    | 10 |
-| Status      | In progress (need edit) |
+| Status      | Complete|
 
 ## Create a Character
 
@@ -62,7 +62,7 @@ Project: DnDnMe
 | Description | As a Jeff I want to be able to select an image of my character sheet so that I can view it |
 | Estimate    | 1 Day |
 | Priority    | 20 |
-| Status      | Not Started |
+| Status      | Complete |
 
 | ID          |US8 |
 | ----------- | ----- |
@@ -70,7 +70,7 @@ Project: DnDnMe
 | Description | As a Jeff I want to be able to list weapons and their attributes on my character sheet so that I can use that weapon to calculate damage |
 | Estimate    | .5 Day |
 | Priority    | 30 |
-| Status      | Not Started |
+| Status      | Complete |
 
 ## Using a character sheet
 
@@ -80,7 +80,7 @@ Project: DnDnMe
 | Description | As a Jeff I want to be able to add and remove items from my character's inventory: |
 | Estimate    | .5 Day |
 | Priority    | 30 |
-| Status      | Not Started |
+| Status      | Partially complete |
 
 | ID          | US10|
 | ----------- | ----- |
@@ -112,7 +112,7 @@ Project: DnDnMe
 | Description | As a Jeff I want to be able to view and edit my character |
 | Estimate    | 2 Day |
 | Priority    | 40 |
-| Status      | In progress (need to add edit) |
+| Status      | Complete |
 
 | ID          | US14 |
 | ----------- | ----- |
@@ -120,7 +120,7 @@ Project: DnDnMe
 | Description | As a Jeff I want to be able to add and view armour for my character |
 | Estimate    | 1 Day |
 | Priority    | 40 |
-| Status      | In progress |
+| Status      | Not Started |
 
 | ID          | US15 |
 | ----------- | ----- |
@@ -128,4 +128,4 @@ Project: DnDnMe
 | Description | As a Jeff I want to be able to add and view features for my character |
 | Estimate    | 1 Day |
 | Priority    | 40 |
-| Status      | In progress |
+| Status      | Complete |
