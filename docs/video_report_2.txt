@@ -1,0 +1,22 @@
+# Video Report
+
+- Project: DungeonDudes
+- Milestone: M2
+- Demo Video: https://youtu.be/Kd2nwTtVabI
+
+## Who Did What
+
+| Time Offset  | ~1:50 |
+| ------------ | ----- |
+| Contributor  | Rhodes White |
+| Contribution | Updated create character form to include feats |
+| Pull Request | https://github.com/memphis-cs-projects/DungeonDudes/pull/23 |
+
+| Time Offset  | ~4:38 |
+| ------------ | ----- |
+| Contributor  | Robb Aquadro, Mac Fyfe, and Rhodes White |
+| Contribution | Character form updated to include feats, weapons and inventory. Styling was also updated |
+| Pull Request | https://github.com/memphis-cs-projects/DungeonDudes/pull/22, https://github.com/memphis-cs-projects/DungeonDudes/pull/24, https://github.com/memphis-cs-projects/DungeonDudes/pull/27, https://github.com/memphis-cs-projects/DungeonDudes/pull/29
+
+
+
